@@ -93,3 +93,9 @@ if (parent.inheritableThreadLocals != null)
 ### 4.2 threadLocal引起内存泄漏
 
 ThreadLocalMap中key为threadLocal的弱引用，避免内存泄漏，需要在使用完毕后remove
+
+
+
+## 5.代码路径
+
+https://github.com/qiuxn/blog/blob/gh-pages/javabase/src/main/java/com/qiuxn/javabase/thread/threadlocal/ThreadLocalTest.java
