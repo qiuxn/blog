@@ -30,5 +30,7 @@ public class ThreadLocalTest {
         threadOne.start();
         threadTwo.start();
 
+        System.out.println(threadLocal.get());
+
     }
 }
