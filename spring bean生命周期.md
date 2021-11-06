@@ -138,8 +138,11 @@ public class UserPostProcessor implements BeanPostProcessor {
 -------------------------------------------------
 
 前置处理：张三
+
 InitializingBean-->afterPropertiesSet
+
 init-method方法执行
+
 后置处理：张三后置处理
 
 -----------------------
@@ -147,6 +150,7 @@ init-method方法执行
 停止spring工程时，输出如下
 
 DisposableBean-->destroy
+
 destroy-method方法执行
 
 现在结合源码去看AbstractAutowireCapableBeanFactory.doCreateBean
