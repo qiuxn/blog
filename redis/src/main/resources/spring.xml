@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.qiuxn.redis.dto.User" init-method="init" destroy-method="clear" lazy-init="false">
+        <property name="name" value="张三"/>
+        <property name="age" value="18"/>
+    </bean>
+
+    <bean id="car" class="com.qiuxn.redis.spring.bean.CarFactoryBean">
+        <property name="carInfo" value="奔驰,400,200000"></property>
+    </bean>
+
+    <bean id="appContext" class="com.qiuxn.redis.spring.bean.AppContext"></bean>
+</beans>
