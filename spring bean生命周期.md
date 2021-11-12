@@ -138,8 +138,11 @@ public class UserPostProcessor implements BeanPostProcessor {
 -------------------------------------------------
 
 前置处理：张三
+
 InitializingBean-->afterPropertiesSet
+
 init-method方法执行
+
 后置处理：张三后置处理
 
 -----------------------
@@ -147,6 +150,7 @@ init-method方法执行
 停止spring工程时，输出如下
 
 DisposableBean-->destroy
+
 destroy-method方法执行
 
 现在结合源码去看AbstractAutowireCapableBeanFactory.doCreateBean
@@ -216,8 +220,8 @@ protected Object initializeBean(String beanName, Object bean, @Nullable RootBean
 }
 ```
 
-![image-20211105234607125](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211105234607125.png)
 
+![2021-11-06_195553](https://user-images.githubusercontent.com/29935469/140608712-59f545d7-f1ae-4379-840f-7c8025b8c2e6.png)
 
 
 ## 3. @PostConstruct和@PreDestroy
